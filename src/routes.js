@@ -31,7 +31,13 @@ const route = [
     method:"GET",
     path:"/notes/{id}",
     handler:getNoteByIdHandler
+  },
+  {
+    method:"PUT",
+    path:"/notes/{id}/edit",
+    handler:editNoteByIdhandler
   }
+
 ];
 
 module.exports = route;

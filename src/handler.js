@@ -71,7 +71,7 @@ const editNoteByIdhandler = (request, h) => {
     updatedAt,
   };
 
-  const response = h.respose({
+  const response = h.response({
     status: "success",
     message: "Catatan berhasil diperbarui",
     data: {
@@ -119,7 +119,7 @@ const removeNoteByIdHandler = (request, h) => {
   notes.splice(index, 1);
   const response = h.response({
     status: "success",
-    message: "Catatan berhasil diperbarui",
+    message: "Catatan berhasil dihapus",
     data: {
       notes,
     },

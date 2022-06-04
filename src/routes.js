@@ -33,7 +33,7 @@ const route = [
     handler:getNoteByIdHandler
   },
   {
-    method:"PUT",
+    method:"POST",
     path:"/notes/{id}/edit",
     handler:editNoteByIdhandler
   }
